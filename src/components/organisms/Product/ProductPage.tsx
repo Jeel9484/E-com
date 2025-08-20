@@ -51,7 +51,6 @@ type ProductType = {
 export default function ProductPage({
   product,
 }: {
-  params: { slug: string };
   product: ProductType;
 }) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);

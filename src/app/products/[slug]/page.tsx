@@ -1,5 +1,3 @@
-// src/app/products/[slug]/page.tsx
-
 import Header from "@/layout/Home/Header";
 import Footer from "@/layout/Home/Footer";
 import ProductPage from "@/components/organisms/Product/ProductPage";
@@ -18,12 +16,10 @@ type ProductType = {
   manufacturing: string;
 };
 
-export default function Product({ params }: { params: { slug: string } }) {
+export default async function Product({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
   const productList = productData.products as ProductType[];
-  const product = productList.find((p) => p.slug === params.slug);
-
-  // Debug: Log the found product
-  console.log("Found product:", product);
+  const product = productList.find((p) => p.slug === slug);
 
   if (!product) {
     return (
@@ -38,7 +34,7 @@ export default function Product({ params }: { params: { slug: string } }) {
   return (
     <>
       <Header />
-      <ProductPage params={params} product={product} />
+      <ProductPage product={product} />
       <Footer />
     </>
   );

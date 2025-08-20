@@ -7,17 +7,17 @@ export type Availability = "all" | "in_stock" | "out_of_stock";
 
 type Props = {
   view: ViewMode;
-  onViewChange: (v: ViewMode) => void;
+  onViewChangeAction: (v: ViewMode) => void;
 
   sort: string;
-  onSortChange: (v: string) => void;
+  onSortChangeAction: (v: string) => void;
   sortOptions: Readonly<Option<string>[]>;
 
   availability: Availability;
-  onAvailabilityChange: (v: Availability) => void;
+  onAvailabilityChangeAction: (v: Availability) => void;
 
   pageSize: number;
-  onPageSizeChange: (v: number) => void;
+  onPageSizeChangeAction: (v: number) => void;
   pageSizeOptions: Readonly<Option<number>[]>;
 
   showingStart: number;
@@ -27,14 +27,14 @@ type Props = {
 
 export default function CatalogToolbar({
   view,
-  onViewChange,
+  onViewChangeAction,
   sort,
-  onSortChange,
+  onSortChangeAction,
   sortOptions,
   availability,
-  onAvailabilityChange,
+  onAvailabilityChangeAction,
   pageSize,
-  onPageSizeChange,
+  onPageSizeChangeAction,
   pageSizeOptions,
   showingStart,
   showingEnd,
@@ -42,24 +42,21 @@ export default function CatalogToolbar({
 }: Props) {
   return (
     <div className="flex flex-wrap items-center justify-between gap-4 border-b pb-4">
-      {/* left: view toggle */}
-      <ViewToggle value={view} onChange={onViewChange} />
+      <ViewToggle value={view} onChange={onViewChangeAction} />
 
-      {/* middle controls */}
       <div className="flex flex-wrap items-center gap-6">
         <SelectField
           id="sort-by"
           label="Sort by :"
           value={sort}
-          onChange={onSortChange}
+          onChangeAction={onSortChangeAction}
           options={sortOptions}
         />
-
-        <SelectField
+        <SelectField<Availability>
           id="availability"
           label="Availability :"
           value={availability}
-          onChange={onAvailabilityChange}
+          onChangeAction={onAvailabilityChangeAction}
           options={[
             { label: "All", value: "all" },
             { label: "In Stock", value: "in_stock" },
@@ -68,17 +65,15 @@ export default function CatalogToolbar({
         />
       </div>
 
-      {/* right: showing + page size */}
       <div className="ml-auto flex items-center gap-6">
         <p className="text-sm text-black/70">
-          Showing <strong>{showingStart}</strong> - <strong>{showingEnd}</strong> of{" "}
-          <strong>{total}</strong> result
+          Showing <strong>{showingStart}</strong> - <strong>{showingEnd}</strong> of <strong>{total}</strong> result
         </p>
-        <SelectField
+        <SelectField<number>
           id="per-page"
           label="Show :"
           value={pageSize}
-          onChange={(v) => onPageSizeChange(Number(v))}
+          onChangeAction={onPageSizeChangeAction}
           options={pageSizeOptions}
         />
       </div>
