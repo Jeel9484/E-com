@@ -1,0 +1,228 @@
+{
+  "aliceWalker": [
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    },
+    {
+      "slug": "kaleidoscope-chronicles-book",
+      "image": "/assets/b-6.jpg",
+      "title": "Kaleidoscope Chronicles Book",
+      "author": "Michael Crichton",
+      "price": 230.78,
+      "oldPrice": 250.00,
+      "sale": true
+    },
+    {
+      "slug": "first-love-shadows-of-nebula",
+      "image": "/assets/b-4.jpg",
+      "title": "First Love Shadows of Nebula",
+      "author": "John Grisham",
+      "price": 92.60
+    },
+    {
+      "slug": "love-in-bloom-timeless-wisdom",
+      "image": "/assets/b-7.jpg",
+      "title": "Love in Bloom Timeless Wisdom",
+      "author": "Octavia E. Butler",
+      "price": 92.60
+    }
+  ],
+  "bestSeller": [
+    {
+      "slug": "secret-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46
+    },
+    {
+      "slug": "chronicles-of-celestial-realms",
+      "image": "/assets/s-5.jpg",
+      "title": "Chronicles of Celestial Realms",
+      "author": "Isabel Allende",
+      "price": 619.34
+    },
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61
+    },
+    {
+      "slug": "the-enigmatic-labyrinth-story",
+      "image": "/assets/nav-3.jpg",
+      "title": "The Enigmatic Labyrinth Story",
+      "author": "H.G. Wells",
+      "price": 817.30
+    }
+  ],
+  "dailyDeals": [
+    {
+      "slug": "first-love-shadows-of-nebula",
+      "image": "/assets/b-4.jpg",
+      "title": "First Love Shadows of Nebula",
+      "author": "John Grisham",
+      "price": 92.60
+    },
+    {
+      "slug": "kaleidoscope-chronicles-book",
+      "image": "/assets/b-6.jpg",
+      "title": "Kaleidoscope Chronicles Book",
+      "author": "Michael Crichton",
+      "price": 230.78,
+      "oldPrice": 250.00
+    },
+    {
+      "slug": "whispers-of-the-enchanted-forest",
+      "image": "/assets/b-3.jpg",
+      "title": "Whispers of the Enchanted Forest",
+      "author": "Khaled Hosseini",
+      "price": 92.60
+    },
+    {
+      "slug": "the-short-stoye-of-olivia",
+      "image": "/assets/s-8.jpg",
+      "title": "The Short Stoye Of Olivia",
+      "author": "John Steinbeck",
+      "price": 423.44,
+      "oldPrice": 440.00
+    }
+  ],
+  "featuredBooks": [
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    },
+    {
+      "slug": "secret-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46
+    },
+    {
+      "slug": "kaleidoscope-chronicles-book",
+      "image": "/assets/b-6.jpg",
+      "title": "Kaleidoscope Chronicles Book",
+      "author": "Michael Crichton",
+      "price": 230.78,
+      "oldPrice": 250.00
+    }
+  ],
+  "gillianFlynn": [
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61
+    },
+    {
+      "slug": "science-fiction-saga-you",
+      "image": "/assets/b-8.jpg",
+      "title": "Science Fiction Saga You",
+      "author": "Jim Richardson",
+      "price": 92.60
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    }
+  ],
+  "mostViewed": [
+    {
+      "slug": "tales-from-the-forgotten-realms",
+      "image": "/assets/s-4.jpg",
+      "title": "Tales from the Forgotten Realms",
+      "author": "Toni Morrison",
+      "price": 92.60
+    },
+    {
+      "slug": "some-where-in-the-city",
+      "image": "/assets/s-7.jpg",
+      "title": "Some Where In The City",
+      "author": "Agatha Christie",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    },
+    {
+      "slug": "the-enigmatic-labyrinth-story",
+      "image": "/assets/nav-3.jpg",
+      "title": "The Enigmatic Labyrinth Story",
+      "author": "H.G. Wells",
+      "price": 817.30
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    }
+  ],
+  "sylviaPlath": [
+    {
+      "slug": "some-where-in-the-city",
+      "image": "/assets/s-7.jpg",
+      "title": "Some Where In The City",
+      "author": "Agatha Christie",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true
+    },
+    {
+      "slug": "chronicles-of-celestial-realms",
+      "image": "/assets/s-5.jpg",
+      "title": "Chronicles of Celestial Realms",
+      "author": "Isabel Allende",
+      "price": 619.34
+    },
+    {
+      "slug": "secret-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46
+    },
+    {
+      "slug": "silant-rain-we-are-together",
+      "image": "/assets/v-4.jpg",
+      "title": "Silant Rain We Are Together",
+      "author": "Virginia Woolf",
+      "price": 240.00
+    }
+  ]
+}

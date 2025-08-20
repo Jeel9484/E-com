@@ -1,0 +1,8 @@
+[
+  { "id": "biography", "title": "Biography", "img": "/assets/biography.png", "alt": "Biography book icon", "href": "/categories/biography" },
+  { "id": "romance",   "title": "Romance",   "img": "/assets/love-books.png",   "alt": "Romance book icon",   "href": "/categories/romance" },
+  { "id": "history",   "title": "History",   "img": "/assets/history-book.png",   "alt": "History book icon",   "href": "/categories/history" },
+  { "id": "kids",      "title": "Kids Book", "img": "/assets/reading.png",      "alt": "Kids books icon",     "href": "/categories/kids" },
+  { "id": "thriller",  "title": "Thriller",  "img": "/assets/thriller.png",  "alt": "Thriller book icon",  "href": "/categories/thriller" },
+  { "id": "cookbook",   "title": "Cook Book", "img": "/assets/diet.png",   "alt": "Cook Book icon",   "href": "/categories/cookbook" }
+]

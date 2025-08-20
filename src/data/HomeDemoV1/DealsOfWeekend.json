@@ -1,0 +1,59 @@
+[
+  {
+    "slug": "tales-from-the-forgotten-realms",
+    "image": "/assets/s-4.jpg",
+    "title": "Tales from the Forgotten Realms",
+    "author": "Toni Morrison",
+    "price": 92.60
+  },
+  {
+    "slug": "some-where-in-the-city",
+    "image": "/assets/s-7.jpg",
+    "title": "Some Where In The City",
+    "author": "Agatha Christie",
+    "oldPrice": 80.00,
+    "price": 59.00,
+    "isSale": true,
+    "showTimer": true
+  },
+  {
+    "slug": "the-enigmatic-labyrinth-story",
+    "image": "/assets/s-6.jpg",
+    "title": "The Enigmatic Labyrinth Story",
+    "author": "H.G. Wells",
+    "price": 817.30
+  },
+  {
+    "slug": "our-family-mysteries-ever",
+    "image": "/assets/b-5.jpg",
+    "title": "Our Family Mysteries Ever",
+    "author": "James Patterson",
+    "oldPrice": 80.00,
+    "price": 59.00,
+    "isSale": true,
+    "showTimer": true
+  },
+  {
+    "slug": "kaleidoscope-chronicles-book",
+    "image": "/assets/b-6.jpg",
+    "title": "Kaleidoscope Chronicles Book",
+    "author": "Michael Crichton",
+    "price": 230.78,
+    "oldPrice": 250.0,
+    "isSale": true
+  },
+  {
+    "slug": "love-in-bloom-timeless-wisdom",
+    "image": "/assets/b-7.jpg",
+    "title": "Love in Bloom Timeless Wisdom",
+    "author": "Octavia E. Butler",
+    "price": 92.60
+  },
+  {
+    "slug": "science-fiction-saga-you",
+    "image": "/assets/b-8.jpg",
+    "title": "Science Fiction Saga You",
+    "author": "Jim Richardson",
+    "price": 92.60
+  }
+]

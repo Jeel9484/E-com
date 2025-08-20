@@ -1,0 +1,62 @@
+{
+  "promo": {
+    "subtitle": "NEW YEAR - NEW BOOKS",
+    "title": "The 19 Best New Books of January",
+    "ctaText": "Shop Now",
+    "ctaLink": "#",
+    "images": ["/assets/banner.jpg"]
+  },
+  "books": [
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "author": "Erik Martin",
+      "title": "Mystery Of The Dark Village",
+      "price": 821.61
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "author": "James Dylan",
+      "title": "Our Familay Mysteries Ever",
+      "oldPrice": 80.00,
+      "price": 59.00
+    },
+    {
+      "slug": "secrets-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "author": "James Dylan",
+      "title": "Secrets of the Velvet Quill",
+      "price": 471.46
+    },
+    {
+      "slug": "kaleidoscope-chronicles-book",
+      "image": "/assets/b-6.jpg",
+      "author": "Historical",
+      "title": "Kaleidoscope Chronicles Book",
+      "oldPrice": 250.00,
+      "price": 230.78
+    },
+    {
+      "slug": "secrets-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "author": "James Dylan",
+      "title": "Secrets of the Velvet Quill",
+      "price": 471.46
+    },
+    {
+      "slug": "chronicles-of-celestial-realms",
+      "image": "/assets/s-5.jpg",
+      "author": "Sage Isaias.",
+      "title": "Chronicles of Celestial Realms",
+      "price": 619.34
+    },
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "author": "Erik Martin",
+      "title": "Mystery Of The Dark Village",
+      "price": 821.61
+    }
+  ]
+}

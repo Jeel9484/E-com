@@ -1,0 +1,47 @@
+[
+  {
+    "slug": "first-love-shadows-of-nebula",
+    "image": "/assets/b-4.jpg",
+    "title": "First Love Shadows of Nebula",
+    "author": "John Grisham",
+    "price": 92.60,
+    "oldPrice": null,
+    "sale": false
+  },
+  {
+    "slug": "kaleidoscope-chronicles-book",
+    "image": "/assets/b-6.jpg",
+    "title": "Kaleidoscope Chronicles Book",
+    "author": "Michael Crichton",
+    "price": 230.78,
+    "oldPrice": 250.00,
+    "sale": true
+  },
+  {
+    "slug": "whispers-of-the-enchanted-forest",
+    "image": "/assets/b-3.jpg",
+    "title": "Whispers of the Enchanted Forest",
+    "author": "Khaled Hosseini",
+    "price": 92.60,
+    "oldPrice": null,
+    "sale": false
+  },
+  {
+    "slug": "the-short-stoye-of-olivia",
+    "image": "/assets/s-8.jpg",
+    "title": "The Short Stoye Of Olivia",
+    "author": "John Steinbeck",
+    "price": 423.44,
+    "oldPrice": 440.00,
+    "sale": true
+  },
+  {
+    "slug": "the-galaxy-of-glory-story",
+    "image": "/assets/d-5.jpg",
+    "title": "The Galaxy Of Glory Story",
+    "author": "Ray Bradbury",
+    "price": 452.95,
+    "oldPrice": null,
+    "sale": false
+  }
+]

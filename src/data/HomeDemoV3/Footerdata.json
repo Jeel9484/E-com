@@ -1,0 +1,35 @@
+{
+  "columns": [
+    {
+      "title": "Need Help",
+      "links": [
+        { "label": "Shipping & Returns", "href": "/shipping-returns" },
+        { "label": "Secure Shopping", "href": "/secure-shopping" },
+        { "label": "Affiliates", "href": "/affiliates" },
+        { "label": "International Shipping", "href": "/international-shipping" },
+        { "label": "Contact", "href": "/contact" }
+      ]
+    },
+    {
+      "title": "Categories",
+      "links": [
+        { "label": "Contact us", "href": "/contact" },
+        { "label": "About us", "href": "/about" },
+        { "label": "Term & Conditions", "href": "/terms" },
+        { "label": "Gift Vouchers", "href": "/gift-vouchers" },
+        { "label": "BestSellers", "href": "/bestsellers" }
+      ]
+    },
+    {
+      "title": "Information",
+      "links": [
+        { "label": "My Account", "href": "/account" },
+        { "label": "Shopping cart", "href": "/cart" },
+        { "label": "Wishlist", "href": "/wishlist" },
+        { "label": "Custom Link", "href": "/custom" },
+        { "label": "Help", "href": "/help" }
+      ]
+    }
+  ],
+  "paymentStrip": "/assets/Payment.png"
+}

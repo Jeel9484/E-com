@@ -1,0 +1,84 @@
+{
+  "banner": {
+    "subtitle": "NEW YEAR - NEW BOOKS",
+    "title": "Book Festival Collection",
+    "ctaText": "Shop Now",
+    "ctaLink": "#",
+    "images": ["/assets/festival.jpg"]
+  },
+  "books": [
+    {
+      "slug": "secret-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46
+    },
+    {
+      "slug": "chronicles-of-celestial-realms",
+      "image": "/assets/s-5.jpg",
+      "title": "Chronicles of Celestial Realms",
+      "author": "Isabel Allende",
+      "price": 619.34
+    },
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61
+    },
+    {
+      "slug": "the-enigmatic-labyrinth-story",
+      "image": "/assets/s-6.jpg",
+      "title": "The Enigmatic Labyrinth Story",
+      "author": "H.G. Wells",
+      "price": 817.3
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.0,
+      "oldPrice": 80.0
+    },
+    {
+      "slug": "mystery-of-the-dark-village",
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61
+    },
+    {
+      "slug": "our-familay-mysteries-ever",
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.0,
+      "oldPrice": 80.0
+    },
+    {
+      "slug": "secret-of-the-velvet-quill",
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46
+    },
+    {
+      "slug": "kaleidoscope-chronicles-book",
+      "image": "/assets/b-6.jpg",
+      "title": "Kaleidoscope Chronicles Book",
+      "author": "Michael Crichton",
+      "price": 230.78,
+      "oldPrice": 250.0
+    },
+    {
+      "slug": "whispers-of-the-enchanted-forest",
+      "image": "/assets/b-3.jpg",
+      "title": "Whispers of the Enchanted Forest",
+      "author": "Khaled Hosseini",
+      "price": 92.6
+    }
+  ]
+}

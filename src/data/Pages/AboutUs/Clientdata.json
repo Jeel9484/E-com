@@ -1,0 +1,30 @@
+[
+  {
+    "id": "t1",
+    "name": "HESTER",
+    "location": "NEW YORK",
+    "quote": "Excellent service. The books were wrapped securely and arrived in nice condition.",
+    "avatar": "/assets/a-4.jpg"
+  },
+  {
+    "id": "t2",
+    "name": "JOHN",
+    "location": "NEW YORK",
+    "quote": "Excellent service. The books were wrapped securely and arrived in nice condition.",
+    "avatar": "/assets/a-2.jpg"
+  },
+  {
+    "id": "t3",
+    "name": "JANIFA",
+    "location": "CANADA",
+    "quote": "Excellent service. The books were wrapped securely and arrived in nice condition.",
+    "avatar": "/assets/a-3.jpg"
+  },
+  {
+    "id": "t4",
+    "name": "PERKINS",
+    "location": "LONDON",
+    "quote": "Lovely packaging and quick delivery. Will definitely order again!",
+    "avatar": "/assets/a-1.jpg"
+  }
+]

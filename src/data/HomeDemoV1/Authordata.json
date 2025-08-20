@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Warren Grahams",
+    "image": "/assets/a-1.jpg",
+    "publishedBooks": 8
+  },
+  {
+    "name": "Randal Adkins",
+    "image": "/assets/a-2.jpg",
+    "publishedBooks": 8
+  },
+  {
+    "name": "Randal Adkins",
+    "image": "/assets/a-3.jpg",
+    "publishedBooks": 8
+  },
+  {
+    "name": "Allison Tricia",
+    "image": "/assets/a-4.jpg",
+    "publishedBooks": 8
+  }
+]

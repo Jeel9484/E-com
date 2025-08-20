@@ -1,0 +1,22 @@
+[
+  {
+    "icon": "/assets/book.png",
+    "count": "17,254",
+    "label": "Collection Books"
+  },
+  {
+    "icon": "/assets/writer.png",
+    "count": "12,000",
+    "label": "Authors Among Us"
+  },
+  {
+    "icon": "/assets/cart.png",
+    "count": "8,999",
+    "label": "Proudly Books Sold"
+  },
+  {
+    "icon": "/assets/happy.png",
+    "count": "60,000",
+    "label": "Satisfied Clients"
+  }
+]

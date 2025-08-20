@@ -1,0 +1,23 @@
+[
+  {
+    "image": "/assets/blog-1.jpg",
+    "date": "28 October, 2023",
+    "comments": 5,
+    "title": "Miracle morning with Book shopify",
+    "slug": "miracle-morning-with-book-shopify"
+  },
+  {
+    "image": "/assets/blog-2.jpg",
+    "date": "28 October, 2023",
+    "comments": 0,
+    "title": "Best Book store shopify theme ever",
+    "slug": "best-book-store-shopify-theme-ever"
+  },
+  {
+    "image": "/assets/blog-3.jpg",
+    "date": "28 October, 2023",
+    "comments": 0,
+    "title": "Top 5 Book for World Summit 2023",
+    "slug": "top-5-book-for-world-summit-2023"
+  }
+]

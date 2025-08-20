@@ -1,0 +1,81 @@
+[
+    {
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61,
+      "inStock": true,
+      "color": ["Gold", "Pink"],
+      "categories": ["Kids"]
+    },
+      {
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true,
+      "inStock": true,
+      "color": ["Black", "Blue", "Gold", "Pink"],
+      "categories":["Trends","Women"]
+
+
+    },
+    {
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46,
+      "inStock": true,
+      "color": ["Blue", "Gold","Silver"],
+      "categories": ["Jacket","Tops","Women"]
+    },
+     {
+      "image": "/assets/b-6.jpg",
+      "title": "Kaleidoscope Chronicles Book",
+      "author": "Michael Crichton",
+      "price": 230.78,
+      "oldPrice": 250.00,
+      "sale": true,
+      "inStock": true,
+      "color": ["Gold", "Silver"],
+      "categories": ["Jewelry","Trends"]
+    },
+    {
+      "image": "/assets/b-3.jpg",
+      "title": "Whispers of the Enchanted Forest",
+      "author": "Khaled Hosseini",
+      "price": 92.60,
+      "inStock": true,
+      "color": ["Black", "Blue"],
+      "categories": ["New","Ring","Trends"]
+    },
+    {
+      "image": "/assets/b-7.jpg",
+      "title": "Love in Bloom Timeless Wisdom",
+      "author": "Octavia E. Butler",
+      "price": 92.60,
+      "inStock": true,
+      "color": ["Black", "Blue"],
+      "categories": ["New","Ring","Trends"]
+    },
+      {
+      "image": "/assets/b-4.jpg",
+      "title": "First Love Shadows of Nebula",
+      "author": "John Grisham",
+       "price": 92.60,
+       "inStock": true,
+       "color": ["Black", "Blue"],
+        "categories": ["Sage Isaias","Trends"]
+    },
+    {
+      "image": "/assets/b-8.jpg",
+      "title": "Science Fiction Saga You",
+      "author": "Jim Richardson",
+      "price": 92.60,
+      "inStock": false,
+      "color": ["Black", "Blue"],
+      "categories": ["New", "Ring","Trends"]
+    }
+]

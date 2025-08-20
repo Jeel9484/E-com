@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "title": "Best Weekend",
+    "subtitle": "Up To 20% Off",
+    "linkText": "Shop Now",
+    "link": "#",
+    "bg": "bg-[#fc8c13]",
+    "image": "/assets/bn-1.jpg"
+  },
+  {
+    "id": 2,
+    "title": "Nice Bookshelf.",
+    "subtitle": "Special Offer",
+    "linkText": "Shop Now",
+    "link": "#",
+    "bg": "bg-[#ffd000]",
+    "image": "/assets/bn-2.jpg"
+  }
+]

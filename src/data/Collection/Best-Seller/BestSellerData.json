@@ -1,0 +1,76 @@
+[
+    {
+      "image": "/assets/b-2.jpg",
+      "title": "Secret Of The Velvet Quill",
+      "author": "Ernest HemingWay",
+      "price": 471.46,
+      "inStock": true,
+      "color": ["Blue","Gold","Silver"],
+      "categories": ["Jackets","Tops","Women"]
+    },
+    {
+      "image": "/assets/s-5.jpg",
+      "title": "Chronicles of Celestial Realms",
+      "author": "Isabel Allende",
+      "price": 619.34,
+      "color": ["Blue","Linen"],
+      "categories": ["Accessories","Best Seller"]
+    },
+    {
+      "image": "/assets/b-1.jpg",
+      "title": "Mystery Of The Dark Village",
+      "author": "John Steinbeck",
+      "price": 821.61,
+      "inStock": true,
+      "color": ["Gold","Pink"],
+      "categories": ["Kids"]
+    },
+    {
+      "image": "/assets/nav-3.jpg",
+      "title": "The Enigmatic Labyrinth Story",
+      "author": "H.G. Wells",
+      "price": 817.30,
+       "color": ["Black","Blue","White"],
+       "categories": ["Trends"]
+    },
+    {
+      "image": "/assets/b-5.jpg",
+      "title": "Our Familay Mysteries Ever",
+      "author": "James Patterson",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true,
+      "inStock": true,
+       "color": ["Black","Gold","Pink"],
+       "categories": ["Trends","Women"]
+    },
+    {
+      "image": "/assets/s-7.jpg",
+      "title": "Some Where In The City",
+      "author": "Agatha Christie",
+      "price": 59.00,
+      "oldPrice": 80.00,
+      "sale": true,
+      "showTimer": true,
+       "color": ["Black","Gold","Pink"],
+       "categories": ["City","Trends"]
+    },
+    {
+      "image": "/assets/s-4.jpg",
+      "title": "Tales from the Forgotten Realms",
+      "author": "Toni Morrison",
+      "price": 92.60,
+      "color": ["Black","Blue"],
+      "categories": ["Historical","New","Trends"]
+    },
+    {
+      "image": "/assets/s-8.jpg",
+      "title": "The Short Stoye Of Olivia",
+      "author": "John Steinbeck",
+      "price": 423.44,
+      "oldPrice":440.00,
+      "color": ["Black","Gold","White"],
+      "categories": ["Erik Martin", "Story","Trends"]
+    }
+]

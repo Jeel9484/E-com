@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "tales-from-the-forgotten-realms",
+    "image": "/assets/s-4.jpg",
+    "title": "Tales from the Forgotten Realms",
+    "author": "Toni Morrison",
+    "price": 92.60
+  },
+  {
+    "slug": "some-where-in-the-city",
+    "image": "/assets/s-7.jpg",
+    "title": "Some Where In The City",
+    "author": "Agatha Christie",
+    "price": 59.00,
+    "oldPrice": 80.0,
+    "isSale": true,
+    "showTimer": true
+  },
+  {
+    "slug": "the-enigmatic-labyrinth-story",
+    "image": "/assets/s-6.jpg",
+    "title": "The Enigmatic Labyrinth Story",
+    "author": "H.G. Wells",
+    "price": 817.30
+  },
+  {
+    "slug": "",
+    "image": "/assets/reading.jpg"
+  }
+]

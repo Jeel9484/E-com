@@ -1,0 +1,42 @@
+[
+  {
+    "name": "James Patterson",
+    "image": "/assets/au-1.jpeg",
+    "publishedBooks": 8
+  },
+  {
+    "name": "Paulo Coelho",
+    "image": "/assets/au-2.jpeg",
+    "publishedBooks": 3
+  },
+  {
+    "name": "Alice Walker",
+    "image": "/assets/au-3.jpeg",
+    "publishedBooks": 10
+  },
+  {
+    "name": "Aldous Huxley",
+    "image": "/assets/au-4.jpeg",
+    "publishedBooks": 8
+  },
+   {
+    "name": "Gillian Flynn",
+    "image": "/assets/reading.jpg",
+    "publishedBooks": 5
+   },
+   {
+    "name": "Ernest Cline",
+    "image": "/assets/au-5.jpeg",
+    "publishedBooks": 5
+  },
+  {
+    "name": "Rainbow Rowell",
+    "image": "/assets/au-6.jpeg",
+    "publishedBooks": 3
+  },
+  {
+    "name": "Sylvia Plath",
+    "image": "/assets/au-7.jpeg",
+    "publishedBooks": 5
+  }
+]

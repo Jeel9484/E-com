@@ -1,0 +1,48 @@
+{
+  "left": [
+    {
+      "type": "card",
+      "backgroundImage": "/assets/h-1.jpg",
+      "heading": "History Book",
+      "buttonText": "Read for $4.99",
+      "href": "/history"
+    },
+    {
+      "type": "small",
+      "backgroundImage": "/assets/h-3.jpg",
+      "heading": "Comedy",
+      "buttonText": "Read for $3.99",
+      "href": "/comedy"
+    },
+    {
+      "type": "small",
+      "backgroundImage": "/assets/h-4.jpg",
+      "heading": "Family",
+      "buttonText": "Read for $4.99",
+      "href": "/family"
+    }
+  ],
+  "right": [
+    {
+      "type": "small",
+      "backgroundImage": "/assets/h-2.jpg",
+      "heading": "Adventure",
+      "buttonText": "Read for $3.49",
+      "href": "/adventure"
+    },
+    {
+      "type": "small",
+      "backgroundImage": "/assets/h-3.jpg",
+      "heading": "Sci-Fi",
+      "buttonText": "Read for $4.49",
+      "href": "/sci-fi"
+    },
+    {
+      "type": "card",
+      "backgroundImage": "/assets/h-5.jpg",
+      "heading": "Romance Book",
+      "buttonText": "Read for $5.99",
+      "href": "/romance"
+    }
+  ]
+}
