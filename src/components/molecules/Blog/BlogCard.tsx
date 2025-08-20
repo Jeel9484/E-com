@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import blogData from "@/data/Blog/BlogData.json";
+
 
 type BlogCardProps = {
   slug: string;

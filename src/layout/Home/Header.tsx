@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { Search, Menu, X, Plus, ChevronDown } from "lucide-react";
+import { Search, Menu, X} from "lucide-react";
 
 import HomeDropdownMenu from "@/components/molecules/HomeDemoV1/Dropdown/Homedropdown";
 import PagesDropdownMenu from "@/components/molecules/HomeDemoV1/Dropdown/Pagesdropdown";

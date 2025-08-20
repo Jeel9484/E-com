@@ -1,5 +1,4 @@
 "use client";
-import Link from "next/link";
 import data from "@/data/HomeDemoV2/CustomerFavouriteData.json";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";

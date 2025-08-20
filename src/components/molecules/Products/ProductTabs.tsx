@@ -65,9 +65,9 @@ const ProductTabs = () => {
             <p className="text-base">
               Faded short sleeves t-shirt with high neckline. Soft and stretchy
               material for a comfortable fit. Accessorize with a straw hat and
-              you're ready for summer!Faded short sleeves t-shirt with high
+              you&apos;re ready for summer!Faded short sleeves t-shirt with high
               neckline. Soft and stretchy material for a comfortable fit.
-              Accessorize with a straw hat and you're ready for summe!Aenean
+              Accessorize with a straw hat and you&apos;re ready for summe!Aenean
               massa. Cum sociis natoque penatibus et magnis dis parturient
               montes, nascetur ridicu lus mus. Donec quam felis, ultri cies nec,
               pellentesque eu, pretium quis, sem. Nulla consequat massa quis

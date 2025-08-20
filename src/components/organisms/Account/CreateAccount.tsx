@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function RegisterForm() {
   const [form, setForm] = useState({
@@ -77,9 +78,9 @@ export default function RegisterForm() {
         </form>
 
         <div className="mt-6 text-center">
-          <a href="/" className="text-sm text-black underline">
+          <Link href="/" className="text-sm text-black underline">
             Return to Store
-          </a>
+          </Link>
         </div>
       </div>
     </div>

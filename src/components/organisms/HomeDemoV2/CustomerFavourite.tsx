@@ -13,7 +13,7 @@ export default function CustomerFavouriteSection() {
   return (
     <section className="container-fluid mb-10">
       <div className="flex justify-between items-center mb-10">
-        <h2 className="text-4xl">Customer's Favourite</h2>
+        <h2 className="text-4xl">Customer&apos;s Favourite</h2>
         <Link
           href="#"
           className="bg-black text-white px-6 py-3 text-lg hover:bg-[#e9452e] transition"

@@ -1,6 +1,7 @@
 "use client";
 import type { Book } from "@/components/atoms/ProductCard";
 import Icon from "@/components/atoms/icon";
+import Image from "next/image";
 
 export default function ProductList({ items }: { items: Book[] }) {
   return (
@@ -10,9 +11,11 @@ export default function ProductList({ items }: { items: Book[] }) {
           key={p.title + p.author}
           className="grid grid-cols-[120px_1fr] items-start gap-6 rounded-xl border p-4 md:grid-cols-[200px_1fr]"
         >
-          <img
+          <Image
             src={p.image}
             alt={p.title}
+            height={400}
+            width={400}
             className="aspect-[3/4] w-full rounded-lg object-cover"
           />
           <div>

@@ -1,8 +1,10 @@
 "use client";
+import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import type { Swiper as SwiperType } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
@@ -47,12 +49,13 @@ type ProductType = {
 };
 
 export default function ProductPage({
-  params,
   product,
 }: {
   params: { slug: string };
   product: ProductType;
 }) {
+  const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+
   if (!product) {
     return <div>Product not found</div>;
   }
@@ -68,8 +71,6 @@ export default function ProductPage({
     description: defaultDescription,
     ...product,
   };
-
-  const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
 
   const galleryImages = fullProduct.gallery.filter(
     (img: string) => img !== fullProduct.mainImage
@@ -148,7 +149,7 @@ export default function ProductPage({
 
         {/* Product Info */}
         <div>
-          <h1 className="text-3xl mb-2">{fullProduct.title}</h1>
+          <h1 className="text-3xl mb-2">{fullProduct.title}</h1> 
 
           <div className="flex items-center gap-3 mb-4">
             {fullProduct.old_price && (
@@ -196,7 +197,7 @@ export default function ProductPage({
 
           {/* Product Actions */}
           <div className="mb-6 flex gap-4 text-lg">
-            {fullProduct.product_actions.map((action: any, i: number) => (
+            {fullProduct.product_actions.map((action: { text: string }, i: number) => (
               <Link href="#" key={i}>
                 {action.text}
               </Link>

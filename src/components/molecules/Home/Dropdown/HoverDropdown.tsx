@@ -6,7 +6,6 @@ import { Plus } from 'lucide-react';
 export default function HoverDropdown({
   title,
   children,
-  onNavigate,
 }: {
   title: string;
   children: React.ReactNode;          // <Link /> ઇલેમેન્ટ્સ

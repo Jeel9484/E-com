@@ -159,9 +159,11 @@ export default function Slug({
               <ul className="space-y-4">
                 {BLOG_CONSTANTS.comments.map((comment, i) => (
                   <li key={i} className="flex items-start gap-4  pb-4">
-                    <img
+                    <Image
                       src={comment.avatar}
                       alt={comment.name}
+                      height={150}
+                      width={150}
                       className="w-32 h-32"
                     />
                     <div>

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import CircleStatBadge from "@/components/molecules/Pages/AboutUs/Circelstatic";
 
 type AboutSectionProps = {
   imgSrc: string; // e.g. "/images/library.png"
@@ -14,7 +13,6 @@ export default function AboutSection({
   imgSrc,
   imgAlt = "Reading a CEO",
   headline,
-  subhead,
   paragraphs = [],
   founder,
 }: AboutSectionProps) {
