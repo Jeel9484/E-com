@@ -64,7 +64,7 @@ export const CartDropdown = () => {
         ))}
       </div>
       
-      <div className="border-t pt-3 mt-3">
+      <div className="border-t border-gray-200 pt-3 mt-3">
         <div className="flex justify-between items-center mb-3">
           <span className="font-semibold">Total:</span>
           <span className="font-semibold">£{state.total.toFixed(2)}</span>
