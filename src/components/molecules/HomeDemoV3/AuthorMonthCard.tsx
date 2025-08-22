@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/icon";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 interface AuthorMonthCardProps {
   slug: string;
@@ -17,7 +18,6 @@ interface AuthorMonthCardProps {
   onView?: () => void;
   onWishlist?: () => void;
   onAddToCart?: () => void;
-  /** when true, render only the image tile (no overlays, no content) */
   imageOnly?: boolean;
 }
 
@@ -36,6 +36,20 @@ export default function AuthorMonthCard({
   imageOnly = false,
 }: AuthorMonthCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: slug,
+      slug,
+      title: title ?? "Unknown Title",
+      author: author ?? "Unknown Author",
+      price: price ?? 0,
+      oldPrice,
+      image,
+    });
+    onAddToCart?.();
+  };
 
   // When imageOnly, render only the image block (keeps your layout intact)
   if (imageOnly) {
@@ -76,7 +90,10 @@ export default function AuthorMonthCard({
             }`}
           >
             {["Days", "Hours", "Min", "Sec"].map((label) => (
-              <div key={label} className="bg-black text-white text-center px-3 py-1 rounded">
+              <div
+                key={label}
+                className="bg-black text-white text-center px-3 py-1 rounded"
+              >
                 <div className="font-bold text-lg leading-none">00</div>
                 <div className="text-xs">{label}</div>
               </div>
@@ -86,7 +103,7 @@ export default function AuthorMonthCard({
 
         {/* Hover buttons */}
         <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover/card:opacity-100 transition gap-2 z-30 pointer-events-none">
-        <div className="pointer-events-auto">
+          <div className="pointer-events-auto">
             <Button onClick={onView} variant="button" size="xl">
               <Icon name="eye" />
             </Button>
@@ -97,21 +114,21 @@ export default function AuthorMonthCard({
             </Button>
           </div>
           <div className="pointer-events-auto">
-            <Button onClick={onAddToCart} variant="button" size="xl">
+            <Button onClick={handleAddToCart} variant="button" size="xl">
               <Icon name="cart" />
             </Button>
           </div>
         </div>
-        
+
         <Link href={`/products/${slug}`} className="block">
-        <Image
-          src={image}
-          alt={title ?? "Book cover"}
-          width={370}
-          height={298}
-          className="object-contain w-full h-full cursor-pointer"
-          loading="lazy"
-        />
+          <Image
+            src={image}
+            alt={title ?? "Book cover"}
+            width={370}
+            height={298}
+            className="object-contain w-full h-full cursor-pointer"
+            loading="lazy"
+          />
         </Link>
       </div>
 
@@ -125,11 +142,17 @@ export default function AuthorMonthCard({
         <div className="flex items-center justify-center gap-2">
           {typeof oldPrice === "number" ? (
             <>
-              <span className="line-through text-black/80 text-lg">£{oldPrice.toFixed(2)}</span>
-              <span className="text-[#e9452e] font-semibold text-lg">£{(price ?? 0).toFixed(2)}</span>
+              <span className="line-through text-black/80 text-lg">
+                £{oldPrice.toFixed(2)}
+              </span>
+              <span className="text-[#e9452e] font-semibold text-lg">
+                £{(price ?? 0).toFixed(2)}
+              </span>
             </>
           ) : (
-            <span className="text-[#e9452e] font-semibold text-lg">£{(price ?? 0).toFixed(2)}</span>
+            <span className="text-[#e9452e] font-semibold text-lg">
+              £{(price ?? 0).toFixed(2)}
+            </span>
           )}
         </div>
       </div>

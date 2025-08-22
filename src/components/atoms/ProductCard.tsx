@@ -34,6 +34,7 @@ export default function ProductCard({
   onAddToCart,
 }: Book) {
     const [isHovered, setIsHovered] = useState(false);
+
   return (
       <div
       className="bg-white flex flex-col h-full group/card"

@@ -3,6 +3,8 @@ import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/icon";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
+
 
 interface BookCardProps {
    slug: string;
@@ -32,6 +34,20 @@ export default function BookCard({
   onAddToCart,
 }: BookCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: slug,
+      slug,
+      title,
+      author,
+      price,
+      oldPrice,
+      image,
+    });
+    onAddToCart?.();
+  };
 
   return (
     <div className="bg-white flex flex-col h-full">
@@ -54,10 +70,10 @@ export default function BookCard({
       left-1/2 -translate-x-1/2
       z-20
       flex
-      gap-2 md:gap-2.5 sm:gap-1.5        /* spacing – responsive  */
+      gap-2 md:gap-2.5 sm:gap-1.5
       transition-opacity duration-300
       group-hover:opacity-0 opacity-100
-      bottom-3 md:bottom-6 sm:bottom-0      /* 位置 – સ્ક્રીન‑સાઇઝ‑નુ   */
+      bottom-3 md:bottom-6 sm:bottom-0      
     "
           >
             {["Days", "Hours", "Min", "Sec"].map((label) => (
@@ -91,7 +107,7 @@ export default function BookCard({
             </Button>
           </div>
           <div className="pointer-events-auto">
-            <Button onClick={onAddToCart} variant="button" size="xl">
+            <Button onClick={handleAddToCart} variant="button" size="xl">
               <Icon name="cart" />
             </Button>
           </div>

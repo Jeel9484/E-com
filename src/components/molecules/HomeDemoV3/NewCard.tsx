@@ -4,6 +4,7 @@ import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/icon";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 interface NewCardProps {
   slug: string;
@@ -33,6 +34,20 @@ export default function NewCard({
   onAddToCart,
 }: NewCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+    const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: slug,
+      slug,
+      title,
+      author,
+      price,
+      oldPrice,
+      image,
+    });
+    onAddToCart?.();
+  };
 
   return (
     <div className="bg-white flex flex-col h-full">
@@ -76,7 +91,7 @@ export default function NewCard({
             </Button>
           </div>
           <div className="pointer-events-auto">
-            <Button onClick={onAddToCart} variant="button" size="xl">
+            <Button onClick={handleAddToCart} variant="button" size="xl">
               <Icon name="cart" />
             </Button>
           </div>

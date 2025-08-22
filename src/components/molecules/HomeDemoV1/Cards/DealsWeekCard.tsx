@@ -3,7 +3,8 @@ import { useState } from "react";
 import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/icon";
-import Link from "next/link"; 
+import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 interface DealCardProps {
   slug: string;   // 🔹 Added slug here
@@ -20,7 +21,7 @@ interface DealCardProps {
 }
 
 export default function DealCard({
-  slug,   // 🔹 Accept slug
+  slug,
   image,
   title,
   author,
@@ -33,6 +34,20 @@ export default function DealCard({
   onAddToCart,
 }: DealCardProps) {
   const [isHovered, setIsHovered] = useState(false);
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: slug,
+      slug,
+      title,
+      author,
+      price,
+      oldPrice,
+      image,
+    });
+    onAddToCart?.();
+  };
 
   return (
     <div
@@ -81,7 +96,7 @@ export default function DealCard({
             </Button>
           </div>
           <div className="pointer-events-auto">
-            <Button onClick={onAddToCart} variant="button" size="xl">
+            <Button onClick={handleAddToCart} variant="button" size="xl">
               <Icon name="cart" />
             </Button>
           </div>

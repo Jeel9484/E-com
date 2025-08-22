@@ -23,7 +23,7 @@ const variantStyles = {
   secondary: "bg-black hover:bg-[#01382e] text-white",
   outline: "bg-transparent border-2 border-[#e9452e] text-[#e9452e] hover:bg-[#e9452e] hover:text-white",
   inline:"bg-black hover:bg-[#c63d28] text-white",
-  button: "rounded-full shadow bg-white"
+  button: "rounded-full shadow bg-white cursor-pointer"
 };
 
 const Button: React.FC<ButtonProps> = ({

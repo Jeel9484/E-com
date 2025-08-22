@@ -1,4 +1,6 @@
 import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -7,9 +9,11 @@ export default function RootLayout({
   return (
     <html>
       <body>
-        <main>
-             {children}
-        </main>
+        <CartProvider>
+          <main>
+               {children}
+          </main>
+        </CartProvider>
       </body>
     </html>
   );

@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import ProductTabs from "@/components/molecules/Products/ProductTabs";
 import YouMayLikeSection from "@/components/molecules/Products/YouMakelike";
-
+import { useCart } from "@/context/CartContext";
 
 import {
   defaultGallery,
@@ -54,6 +54,8 @@ export default function ProductPage({
   product: ProductType;
 }) {
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
+  const [quantity, setQuantity] = useState(1);
+  const { addToCart } = useCart();
 
   if (!product) {
     return <div>Product not found</div>;
@@ -69,6 +71,18 @@ export default function ProductPage({
     product_details: defaultProductDetails,
     description: defaultDescription,
     ...product,
+  };
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: product.slug,
+      slug: product.slug,
+      title: product.title,
+      author: product.type, // Using type as author
+      price: product.price,
+      oldPrice: product.old_price,
+      image: product.mainImage,
+    });
   };
 
   const galleryImages = fullProduct.gallery.filter(
@@ -148,7 +162,7 @@ export default function ProductPage({
 
         {/* Product Info */}
         <div>
-          <h1 className="text-3xl mb-2">{fullProduct.title}</h1> 
+          <h1 className="text-3xl mb-2">{fullProduct.title}</h1>
 
           <div className="flex items-center gap-3 mb-4">
             {fullProduct.old_price && (
@@ -208,33 +222,33 @@ export default function ProductPage({
             <div className="flex items-center gap-4">
               <label>Quantity:</label>
               <div className="flex items-center border">
-                <button className="px-3 py-1">
-                  {fullProduct.purchase_options.quantity_selector.decrease_button}
+                <button
+                  className="px-3 py-1"
+                  onClick={() => setQuantity(Math.max(1, quantity - 1))}
+                >
+                  -
                 </button>
-                <span className="px-4">
-                  {fullProduct.purchase_options.quantity_selector.quantity}
-                </span>
-                <button className="px-3 py-1">
-                  {fullProduct.purchase_options.quantity_selector.increase_button}
+                <span className="px-4">{quantity}</span>
+                <button
+                  className="px-3 py-1"
+                  onClick={() => setQuantity(quantity + 1)}
+                >
+                  +
                 </button>
               </div>
               <button
                 className="bg-black text-white px-6 py-3 w-fit hover:bg-gray-800 disabled:bg-gray-400"
-                disabled={
-                  fullProduct.purchase_options.add_to_cart_button.status !==
-                  "active"
-                }
+                disabled={fullProduct.availability <= 0}
+                onClick={handleAddToCart}
               >
-                {fullProduct.purchase_options.add_to_cart_button.text}
+                ADD TO CART
               </button>
             </div>
             <button
               className="bg-blue-600 text-white px-6 py-3 w-[43%] hover:bg-blue-700 disabled:bg-gray-400"
-              disabled={
-                fullProduct.purchase_options.buy_it_now_button.status !== "active"
-              }
+              disabled={fullProduct.availability <= 0}
             >
-              {fullProduct.purchase_options.buy_it_now_button.text}
+              BUY IT NOW
             </button>
           </div>
 

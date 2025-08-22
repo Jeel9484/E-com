@@ -1,7 +1,9 @@
+"use client"
 import Image from "next/image";
 import Button from "@/components/atoms/Button";
 import Icon from "@/components/atoms/icon";
 import Link from "next/link";
+import { useCart } from "@/context/CartContext";
 
 type DealBookCardProps = {
   slug: string;
@@ -28,6 +30,21 @@ function DealBookCard({
   onWishlist,
   onAddToCart,
 }: DealBookCardProps) {
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart({
+      id: slug,
+      slug,
+      title,
+      author,
+      price,
+      oldPrice,
+      image,
+    });
+    onAddToCart?.();
+  };
+
   return (
     <div className="flex flex-col items-center">
       <div className="relative group">
@@ -51,7 +68,7 @@ function DealBookCard({
             </Button>
           </div>
           <div className="pointer-events-auto">
-            <Button onClick={onAddToCart} variant="button" size="xl">
+            <Button onClick={handleAddToCart} variant="button" size="xl">
               <Icon name="cart" />
             </Button>
           </div>
