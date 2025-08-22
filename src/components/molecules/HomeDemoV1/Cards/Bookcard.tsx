@@ -79,25 +79,31 @@ export default function BookCard({
         )}
 
         {/* Hover icons — CENTER on image */}
-        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition gap-2 z-30">
-          <Button onClick={onView} variant="button" size="xl">
-            <Icon name="eye" />
-          </Button>
-          <Button onClick={onWishlist} variant="button" size="xl">
-            <Icon name="heart" />
-          </Button>
-          <Button onClick={onAddToCart} variant="button" size="xl">
-            <Icon name="cart" />
-          </Button>
+        <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition gap-2 z-30 pointer-events-none">
+        <div className="pointer-events-auto">
+            <Button onClick={onView} variant="button" size="xl">
+              <Icon name="eye" />
+            </Button>
+          </div>
+          <div className="pointer-events-auto">
+            <Button onClick={onWishlist} variant="button" size="xl">
+              <Icon name="heart" />
+            </Button>
+          </div>
+          <div className="pointer-events-auto">
+            <Button onClick={onAddToCart} variant="button" size="xl">
+              <Icon name="cart" />
+            </Button>
+          </div>
         </div>
         {/* Book Image */}
-        <Link href={`/products/${slug}`}>
+        <Link href={`/products/${slug}`} className="block">
           <Image
           src={image}
           alt={title}
           width={370}
           height={298}
-          className="w-full h-full object-cover"
+          className="w-full h-full object-cover cursor-pointer"
           loading="lazy"
         />
         </Link>

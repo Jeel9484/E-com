@@ -12,9 +12,9 @@ const ShopMegaDropdownMenu = () => (
         <ChevronDown className="w-4 h-4" />
       </div>
     }
-    align="center"
+    align="custom"
   >
-    <Link href="/collections/featured-books" className="flex p-6 gap-8 bg-white min-w-[800px]">
+    <Link href="/collections/featured-books" className="flex p-6 gap-8 bg-white min-w-[800px] absolute left-1/2 transform -translate-x-1/2">
       <div className="flex flex-col items-center">
         <Image
           src="/assets/nav-1.jpg"

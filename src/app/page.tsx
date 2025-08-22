@@ -9,7 +9,7 @@ import Footer from "@/layout/Home/Footer";
 import Header from "@/layout/Home/Header";
 
 export default function Home() {
-  return (
+  return (  
     <>
       <Header/>
       <HeroSection/>

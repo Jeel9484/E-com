@@ -12,6 +12,7 @@ interface BestBookListItemProps {
 
 const BestBookItem = ({ image, author, title, price, oldPrice,slug }: BestBookListItemProps) => (
   <div className="flex gap-5 mb-8 last:mb-0 items-start">
+    <Link href={`/products/${slug}`}>
     <Image
       src={image}
       alt={title}
@@ -20,6 +21,7 @@ const BestBookItem = ({ image, author, title, price, oldPrice,slug }: BestBookLi
       className="object-cover"
       loading="lazy"
     />
+    </Link>
     <div>
       <div className="text-gray-400 text-base mb-1">{author}.</div>
       <Link href={`/products/${slug}`} className="text-lg mb-2 hover:text-[#e9452e] ">{title}</Link>

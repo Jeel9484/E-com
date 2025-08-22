@@ -6,7 +6,7 @@ import { AnimatePresence, motion } from "framer-motion";
 interface DropdownProps {
   trigger: React.ReactNode;
   children: React.ReactNode;
-  align?: "left" | "right" | "center";
+  align?: "left" | "right" | "center"| "custom";
 }
 
 export const Dropdown: React.FC<DropdownProps> = ({
@@ -35,6 +35,7 @@ export const Dropdown: React.FC<DropdownProps> = ({
               ${align === "left" ? "left-0" : ""}
               ${align === "right" ? "right-0" : ""}
               ${align === "center" ? "left-1/2 -translate-x-1/2" : ""}
+              ${align === "custom" ? "left-20" : ""}
             `}
           >
             {children}
