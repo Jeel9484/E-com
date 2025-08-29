@@ -7,6 +7,7 @@ import { X,Plus,Minus } from "lucide-react";
 
 const CartPage: React.FC = () => {
   const { state, removeFromCart, updateQuantity } = useCart();
+  const { checkout } = useCart();
   const [deliveryDate, setDeliveryDate] = useState<string>("");
   const [specialInstructions, setSpecialInstructions] = useState<string>("");
 
@@ -171,12 +172,12 @@ const CartPage: React.FC = () => {
                 <td className="py-4 px-4">£{state.total.toFixed(2)}</td>
               </tr>
             </table>
-            <Link
-              href="/checkout"
-              className="block text-center bg-black text-white py-3 px-4 w-1/2 hover:bg-gray-800 transition"
+            <button
+              onClick={checkout}
+              className="block text-center bg-black text-white py-3 px-4 w-1/2 hover:bg-gray-800 transition cursor-pointer"
             >
               Proceed to Checkout
-            </Link>
+            </button>
           </div>
         </div>
       </div>
