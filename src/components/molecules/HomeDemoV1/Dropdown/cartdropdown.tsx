@@ -7,6 +7,7 @@ import { Trash2, Plus, Minus } from "lucide-react";
 
 export const CartDropdown = () => {
   const { state, removeFromCart, updateQuantity } = useCart();
+  const { checkout } = useCart();
 
   if (state.items.length === 0) {
     return (
@@ -77,12 +78,12 @@ export const CartDropdown = () => {
           >
             View Cart
           </Link>
-          <Link
-            href="/checkout"
+          <button
+            onClick={checkout}
             className="block w-full bg-orange-500 text-white text-center py-2 px-4 hover:bg-orange-600 transition"
           >
             Checkout
-          </Link>
+          </button>
         </div>
       </div>
     </div>

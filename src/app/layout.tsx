@@ -8,11 +8,12 @@ export default function RootLayout({
 }>) {
   return (
     <html>
+      <head>
+        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+      </head>
       <body>
         <CartProvider>
-          <main>
-               {children}
-          </main>
+          <main>{children}</main>
         </CartProvider>
       </body>
     </html>

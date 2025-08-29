@@ -56,6 +56,7 @@ export default function ProductPage({
   const [thumbsSwiper, setThumbsSwiper] = useState<SwiperType | null>(null);
   const [quantity, setQuantity] = useState(1);
   const { addToCart } = useCart();
+  const { checkout } = useCart();
 
   if (!product) {
     return <div>Product not found</div>;
@@ -245,7 +246,8 @@ export default function ProductPage({
               </button>
             </div>
             <button
-              className="bg-blue-600 text-white px-6 py-3 w-[43%] hover:bg-blue-700 disabled:bg-gray-400"
+              onClick={checkout}
+              className="bg-blue-600 text-white px-6 py-3 w-[43%] hover:bg-blue-700 disabled:bg-gray-400 cursor-pointer"
               disabled={fullProduct.availability <= 0}
             >
               BUY IT NOW
