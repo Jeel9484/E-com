@@ -1,3 +1,5 @@
+import "./globals.css";
+import { CartProvider } from "@/context/CartContext";
 import Script from "next/script";
 
 export default function RootLayout({
@@ -7,10 +9,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>{/* Other head elements */}</head>
+      <head>{/* Meta, title, favicon etc. */}</head>
       <body>
-        {children}
-        {/* ✅ Load Razorpay async */}
+        {/* Wrap whole app inside CartProvider */}
+        <CartProvider>{children}</CartProvider>
+
+        {/* ✅ Load Razorpay checkout script */}
         <Script
           src="https://checkout.razorpay.com/v1/checkout.js"
           strategy="afterInteractive"
