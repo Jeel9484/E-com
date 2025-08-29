@@ -1,20 +1,20 @@
-import "./globals.css";
-import { CartProvider } from "@/context/CartContext";
+import Script from "next/script";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html>
-      <head>
-        <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
-      </head>
+    <html lang="en">
+      <head>{/* Other head elements */}</head>
       <body>
-        <CartProvider>
-          <main>{children}</main>
-        </CartProvider>
+        {children}
+        {/* ✅ Load Razorpay async */}
+        <Script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          strategy="afterInteractive"
+        />
       </body>
     </html>
   );
